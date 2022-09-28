@@ -1,300 +1,321 @@
- *{
-    margin: 0;
-    padding: 0;
-}
-
-/*----------------- Header ---------------*/
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
- h1{
-    font-size: 40px;
-    font-style:normal; 
-    font-weight: bold;
-    color: brown;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ * {
+     margin: 0;
+     padding: 0;
  }
 
- nav{
-    background-color: beige;
-    border-style:outset; 
-     border-color: #5848b4;
-     border-top: none;
-    
+ /*----------------- Header ---------------*/
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ header {
+     grid-area: header;
+ }
+
+ /*-------------------footer-------------------*/
+
+ footer {
+     background-image: linear-gradient(to right, black, rgba(26, 24, 24, 0.507));
+     display: flex;
+     padding-right: 10%;
+     height: auto;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bolder;
+     font-size: 20px;
+     justify-content: right;
+     grid-area: footer;
+     color: white;
+ }
+
+ /*-------------------inicio-------------------*/
+
+
+ #grilla {
+     display: grid;
+     grid-template-areas:
+         "header header"
+         "barra aside"
+         "barra section"
+         "footer footer";
+     grid-template-rows: auto 2fr 3fr auto;
+     grid-template-columns: 1fr 6fr;
+     background: linear-gradient(94deg, rgba(0, 0, 0, 1) 0%, rgba(237, 0, 255, 1) 54%, rgba(19, 0, 18, 1) 100%);
+ }
+
+
+ .barra {
+     grid-area: barra;
+     background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0.507), black);
+ }
+
+ aside {
+     padding: 60px;
+     grid-area: aside;
+
+ }
+
+ #enlace {
+     text-decoration: none;
+     color: white;
+ }
+
+ .botonCatalogo {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 50px;
+     background-color: rgb(5, 0, 5);
+     border-radius: 50%;
+     display: inline;
+
+
+ }
+
+ .botonCatalogo:hover {
+     background-color: rgb(228, 18, 158);
+     box-shadow: 5px 5px 5px goldenrod;
+ }
+
+ .inicioCatalogo {
+     display: grid;
+     justify-items: center;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 5% 1fr 1fr;
+     padding-top: 0%;
+     grid-area: section;
+ }
+
+ .botonDiv {
+     grid-column: 1 /span 2;
+
+ }
+
+ .productoImg {
+     margin-top: 50px;
+     display: inline;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .inicioCatalogoDiv {
+     padding: 10%;
+     padding-top: 5%
+ }
+
+ .imgInicio:hover {
+     box-shadow: 5px 5px 5px goldenrod;
+ }
+
+ /*-------------------catalogo------------*/
+
+ h3 {
+     text-align: center;
+     font-size: 50px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: #5848b4;
+     padding: 20px;
+     border-style: dashed;
+     background-color: #FFB4B4;
+     margin-top: 60px;
+     margin-right: 200px;
+     margin-bottom: 20px;
+     margin-left: 200px;
+ }
+
+ #grilla2 {
+     display: grid;
+     grid-template-areas:
+         "header header"
+         "barra catalogo"
+         "footer footer";
+     grid-template-rows: auto auto auto;
+     background: rgb(2, 0, 36);
+     background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
+ }
+
+ .catalogo {
+     grid-area: catalogo;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     justify-items: center;
+
+ }
+
+ .gridTitulo {
+     grid-column: 1 /span 2;
      width: 100%;
  }
- ul {
-    list-style: none;
-    font-size:0; 
- }
- li {
-    display: inline-block;
-    position:relative;
-    font-size: 14px;
- }
- ul ul {
-    position: absolute;
-    display: none;
- }
- ul ul ul{
-    position: absolute;
-    display: none;
+
+
+ /*-------------------pedidos--------------*/
+
+
+ #grilla3 {
+     display: grid;
+     grid-template-areas:
+         "header header"
+         "barra pedidos"
+
+         "footer footer";
+     grid-template-rows: auto 1fr auto;
+     grid-template-columns: 1fr 6fr;
  }
 
- ul ul li {
-    display: block;
-    position:  relative;
-    right:60px;
-    font-size: 20px;
-    line-height: 50px;
-    background-color: beige;
+ .pedidos {
+     background: rgb(2, 0, 36);
+     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 116, 1) 38%, rgba(0, 212, 255, 1) 100%);
+     height: auto;
+     grid-area: pedidos;
+     display: flex;
+     flex-direction: column;
  }
 
- ul ul ul li{
-    display: block;
-    position: relative;
-    left: 93px;
-    bottom: 48px;
-    font-size: 20px;
-    background-color: #FFB4B4;
- }
- ul li:hover ul {
-    display:block;
+ .pedidosDiv {
+     width: auto;
+     padding-top: 5%;
+
  }
 
- ul ul li:hover ul{
-    display: block;
+ .pedidosTextos {
+     text-align: center;
+     font-size: 20px;
+     padding-top: 60px;
+     color: rgb(255, 255, 255)
  }
- 
- 
 
-/*-------------------footer-------------------*/
+ .formulario {
+     background-color: #000000;
+     width: 600px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-left: 350px;
+ }
 
-footer{
-    background-color: #B2A4FF;
-    text-align: right;
-    padding-right: 100px;
-    padding-bottom:75px;
-    padding-top:50px;
-    height: 50px;
-    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    border-top: solid;
-   
-}
+ form {
+     text-align: center;
+ }
 
+ /*---------------novedades-----------------*/
 
+ #grilla5 {
+     display: grid;
+     grid-template-areas:
+         "header header"
+         "barra novedades"
+         "barra ofertas"
+         "footer footer";
+     grid-template-rows: auto 3fr 3fr auto;
+     grid-template-columns: 1fr 6fr;
+ }
 
-/*-------------------inicio-------------------*/
+ .loNuevo {
+     background: radial-gradient(circle, rgba(182, 251, 63, 1) 0%, rgba(252, 233, 70, 1) 83%);
+     font-size: 60px;
+     text-align: center;
+     color: #5848b4;
+     padding: 10%;
+     padding-bottom: 0;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     grid-area: novedades;
+     padding-bottom: 10%;
+ }
 
+ .novedades {
+     justify-content: center;
+ }
 
+ .ofertas {
+     background: radial-gradient(circle, rgba(182, 251, 63, 1) 0%, rgba(252, 233, 70, 1) 83%);
+     display: flex;
+     justify-content: center;
+     font-size: 50px;
+     color: #e42838;
+     padding-top: 10%;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     grid-area: ofertas;
+ }
 
+ /*-------------------nosotros-----------------*/
 
-aside{
-    width: auto;
- 
-    background-color: #FFDEB4;
-    overflow: auto;
-    text-align: center;
-    padding: 60px;
-   
-}
+ #grilla4 {
+     display: grid;
+     grid-template-areas:
+         "header header "
+         "barra sobrenos "
+         "barra ubicacionP "
+         "barra ubicacion "
+         "footer footer ";
+     grid-template-rows: auto 1fr 1/2fr 2fr auto;
+     grid-template-columns: 1fr 6fr;
 
-.inicioNovedades{
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
- 
-    
-}
-
-.botonCatalogo{
-    margin-bottom: 90px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size: 40px;
-    color: #B2A4FF;
-    background-color: rgb(116, 0, 139);
-    border-radius: 12px;
-    display: inline;
-    
-}
-
-.inicioCatalogo{
-    background-color: #ffa4ff;
-    display: flex;
-    justify-content: center;
-
-}
-
-.productoImg{
-    margin-top: 50px;
-    display: inline;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column; 
-}
-
-.inicioCatalogoDiv{
-    padding: 10%;
-    padding-top:5%
-
-}
-/*-------------------catalogo------------*/
-
-#titulo{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #5848b4;
-    padding: 20px;
-    border-style: dashed;
-    background-color: #FFB4B4;
-    margin-top: 0px ; 
-    margin-right: 200px ;
-    margin-bottom: 20px;
-    margin-left: 200px ;
-}
-
-h3{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #5848b4;
-    padding: 20px;
-    border-style: dashed;
-    background-color: #FFB4B4;
-    margin-top: 20px;
-    margin-right: 200px ;
-    margin-bottom: 20px;
-    margin-left: 200px ;
-}
-
-.productoDiv{
-    display:flex;
-    justify-content: center;
-}
-.productos{
-   padding: 10%;
-   padding-top: 2%;
-}
+ }
 
 
-/*-------------------pedidos--------------*/
 
-.pedidos{
-    background-color: #FFB4B4;
-    height: 600px;
-    
-}
-.pedidosDiv{
-    width: 300px;
-    height: 160px;
-    padding-left:500px;
-   
-}
-.pedidosTextos{
-    text-align: center;
-    font-size: 20px;
-    padding-top: 60px;
-   color: rgb(120, 44, 192)
-}
+ .sobrenos {
+     background-image: linear-gradient(to right, chocolate, beige);
+     width: auto;
+     grid-area: sobrenos;
+ }
 
-.formulario{
-    background-color: #B2A4FF;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 350px;  
-}
+ .sobrenosDiv {
+     display: flex;
+     flex-direction: row;
+     padding-top: 100px;
+     padding-left: 100px;
+     padding-right: 100px;
+     margin-bottom: 100px;
+     align-items: center;
+ }
 
-form{
-    text-align: center;  
-}
+ .sobrenosp {
+     font-size: 20px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-align: center;
 
-/*---------------novedades-----------------*/
-
-.loNuevo{
-    background-color:#FFB4B4 ;
-    height: 500px;
-    font-size: 60px;
-    text-align: center;
-    color: #5848b4;
-    padding: 10%;
-    padding-bottom: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.novedades{
-    justify-content: center;
-}
-
-.ofertas{
-    background-color: #ffa4ff;
-    height: 500px;
-    display: flex;  
-    justify-content: center; 
-    font-size: 50px;
-    color: #e42838;
-    padding-top: 10%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*-------------------nosotros-----------------*/
-.sobrenos{
-    background-color: #d4aeeb;
-    width: auto;
-    height: 450px;  
-}
-
-.sobrenosDiv{
-    display:flex;
-    flex-direction: row;
-    padding-top: 60px;
-    padding-left:200px;
-    padding-bottom: 200px;
-}
-
-.sobrenosp{
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    width: 250px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
+     padding-left: 60px;
+     padding-right: 60px;
+ }
 
 
-.ubicacionP{
-    background-color: #FFF9CA ; 
-    font-size: 25px;
-    padding-top: 40px;
-    padding-left: 20px;
-}
+ .ubicacionP {
+     background-image: linear-gradient(to right, chocolate, beige);
+     font-size: 25px;
+     padding-left: 20px;
+     grid-area: ubicacionP;
+ }
 
-.ubicacion{
-    background-color: #FFF9CA ; 
-    display: flex;
-}
-.envios{
-    padding-left: 60px;
-}
+ .ubicacionConteiner {
+     display: flex;
+ }
 
-.envios p,h2{
-    color: fuchsia;
-}
+ .ubicacion {
+     background-image: linear-gradient(to right, chocolate, beige);
+     grid-area: ubicacion;
 
-h2{
-    padding-left: 80px;
- 
-}
-ol li{
-    display: block;
-    padding-left: 150px
-}
+ }
+
+ .envios {
+     padding-left: 60px;
+ }
+
+ ol li {
+     display: block;
+     padding-left: 150px
+ }
+
+
+ /*RESPONSIVE*/
+
+ @media screen and (min-width: 576px) {}
+
+     /*INICIO*/
+
+
+     /*FOOTER*/
