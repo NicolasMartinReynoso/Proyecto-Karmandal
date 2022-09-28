@@ -113,14 +113,14 @@
      text-align: center;
      font-size: 50px;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     color: #5848b4;
+     color: white;
      padding: 20px;
-     border-style: dashed;
-     background-color: #FFB4B4;
+     background-color: rgba(0, 0, 0, 0.425);
      margin-top: 60px;
      margin-right: 200px;
      margin-bottom: 20px;
      margin-left: 200px;
+     box-shadow: 10px 10px 5px black;
  }
 
  #grilla2 {
@@ -212,10 +212,11 @@
          "footer footer";
      grid-template-rows: auto 3fr 3fr auto;
      grid-template-columns: 1fr 6fr;
+     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%)
  }
 
  .loNuevo {
-     background: radial-gradient(circle, rgba(182, 251, 63, 1) 0%, rgba(252, 233, 70, 1) 83%);
+     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%);
      font-size: 60px;
      text-align: center;
      color: #5848b4;
@@ -231,7 +232,7 @@
  }
 
  .ofertas {
-     background: radial-gradient(circle, rgba(182, 251, 63, 1) 0%, rgba(252, 233, 70, 1) 83%);
+     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%);
      display: flex;
      justify-content: center;
      font-size: 50px;
@@ -315,7 +316,7 @@
 
  @media screen and (min-width: 576px) {}
 
-     /*INICIO*/
+ /*INICIO*/
 
 
-     /*FOOTER*/
+ /*FOOTER*/
