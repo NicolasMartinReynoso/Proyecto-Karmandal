@@ -223,11 +223,10 @@
          "footer footer";
      grid-template-rows: auto auto auto auto;
      grid-template-columns: 10% 90%;
-     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%)
  }
 
  .loNuevo {
-     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%);
+     background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
      padding-bottom: 0;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      grid-area: novedades;
@@ -240,7 +239,7 @@
 
  .ofertas {
      grid-area: ofertas;
-     background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%)
+     background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
  }
 
  .ofertasImg {
@@ -423,10 +422,6 @@
          padding-left: 10%;
      }
 
-
-
-
-
      /*------------Nosotros--------*/
      #grilla4 {
          display: grid;
@@ -476,6 +471,23 @@
          grid-template-rows: auto auto auto;
          grid-template-columns: auto;
      }
+
+     /*-----------Novedades-----------*/
+
+
+     #grilla5 {
+         display: grid;
+         grid-template-areas:
+             " header"
+             "novedades"
+             "ofertas"
+             " footer";
+         grid-template-rows: auto auto auto auto;
+         grid-template-columns: 100%;
+
+     }
+
+
 
 
  }
