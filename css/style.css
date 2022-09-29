@@ -112,15 +112,16 @@
 
  h3 {
      text-align: center;
-     font-size: 50px;
+     font-size: 300%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      color: white;
-     padding: 20px;
+     padding: 2%;
+     width: 80%;
      background-color: rgba(0, 0, 0, 0.425);
-     margin-top: 60px;
-     margin-right: 200px;
-     margin-bottom: 20px;
-     margin-left: 200px;
+     margin-top: 10%;
+     margin-right: 20%;
+     margin-bottom: 5%;
+     margin-left: 10%;
      box-shadow: 10px 10px 5px black;
  }
 
@@ -131,25 +132,30 @@
          "barra catalogo"
          "footer footer";
      grid-template-rows: auto auto auto;
+     grid-template-columns: 10% 90%;
+
      background: rgb(2, 0, 36);
      background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
  }
 
  .catalogo {
      grid-area: catalogo;
- }
-
- .grid {
-     display: grid;
-     grid-template-columns: auto auto;
-     justify-items: center;
 
  }
 
- .gridTitulo {
-     grid-column: 1 /span 2;
-     width: 100%;
+ .catalogoFlex {
+     display: flex;
+     justify-content: center;
+     padding-left: 20%;
+     overflow: hidden;
  }
+
+ .columna {
+     display: flex;
+     flex-direction: column;
+
+ }
+
 
 
  /*-------------------pedidos--------------*/
@@ -235,7 +241,6 @@
  .ofertas {
      grid-area: ofertas;
      background: radial-gradient(circle, rgb(187, 11, 11) 0%, rgba(5, 5, 5, 0.973) 83%)
-
  }
 
  .ofertasImg {
@@ -376,6 +381,51 @@
      }
 
      /*-------------Catalogo----------*/
+
+     h3 {
+         text-align: center;
+         font-size: 150%;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: white;
+         padding: 2%;
+         width: 90%;
+         background-color: rgba(0, 0, 0, 0.425);
+         margin-top: 15%;
+         margin-right: 10%;
+         margin-bottom: 5%;
+         margin-left: 0%;
+         box-shadow: 10px 10px 5px black;
+     }
+
+     #grilla2 {
+         display: grid;
+         grid-template-areas:
+             "header header"
+             "catalogo catalogo"
+             "footer footer";
+         grid-template-rows: auto auto auto;
+
+         background: rgb(2, 0, 36);
+         background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
+     }
+
+     .catalogoFlex {
+         display: flex;
+
+         padding: 0;
+         flex-direction: column;
+
+
+     }
+
+     .columna {
+         display: flex;
+         padding-left: 10%;
+     }
+
+
+
+
 
      /*------------Nosotros--------*/
      #grilla4 {
