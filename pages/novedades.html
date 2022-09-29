@@ -17,8 +17,8 @@
     <header class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../images/iconokarmandal.png" width="60px" height="auto"
-              alt=""></a>
+          <a class="navbar-brand" href="../index.html"><img src="../images/iconokarmandal.png" width="60px"
+              height="auto" alt=""></a>
           <a class="navbar-brand">Karmandal</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,26 +56,89 @@
 
     <section class="loNuevo">
       <div>
-        <p>¡Lo Nuevo!</p>
+        <h3>¡Lo Nuevo!</h3>
       </div>
 
-      <div class="novedades">
-        <img src="../images/novedades.jpeg" alt="" width="400px" height="212" />
-        <img src="../images/novedades1.jpeg" alt="" width="300px" height="212" />
-        <img src="../images/novedades3.jpeg" alt="" width="216px" height="auto" />
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../images/novedades1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../images/novedades.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
-    <section class="ofertas">
+
+
+    <section class=ofertas>
       <div>
-        <img src="../images/oferta1.jpeg" alt="" width="200" height="auto" />
-        <p>¡Ofertas!</p>
-        <img src="../images/macetapollo.jpeg" alt="" width="200" height="auto" />
+        <h3>¡Ofertas!</h3>
       </div>
+
+      <div class="ofertasImg">
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+          <img src="../images/macetapollo.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card text-center">20%</p>
+          </div>
+        </div>
+
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+          <img src="../images/oferta1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card text-center"> 50%</p>
+          </div>
+        </div>
+
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+          <img src="../images/macetagroot.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card text-center">10%</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
     </section>
+
+
+
+
+
+
+
 
     <nav class="barra"></nav>
-    
+
     <footer>
       <div class="contactos">
         <p>Contáctenos</p>
