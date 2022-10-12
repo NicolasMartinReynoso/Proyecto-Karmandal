@@ -367,16 +367,12 @@
      /*----------FOOTER----------*/
 
      footer {
-         background-image: linear-gradient(to right, black, rgba(26, 24, 24, 0.507));
-         display: flex;
-         height: auto;
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         font-weight: bolder;
+      
+         display: flex;         
          font-size: 100%;
          justify-content: center;
          padding-right: 0%;
-         grid-area: footer;
-         color: white;
+        
      }
 
      /*-------------Catalogo----------*/
