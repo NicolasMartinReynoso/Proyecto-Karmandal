@@ -1,0 +1,101 @@
+#grilla4 {
+    display: grid;
+    grid-template-areas:
+        "header header "
+        "barra sobrenos "
+        "barra ubicacionP "
+        "barra ubicacion "
+        "footer footer ";
+    grid-template-rows: auto 1fr 1/2fr 2fr auto;
+    grid-template-columns: 1fr 6fr;
+
+    .sobrenos {
+        background-image: linear-gradient(to right, chocolate, beige);
+        width: auto;
+        height: auto;
+        grid-area: sobrenos;
+
+        .sobrenosDiv {
+            display: flex;
+            flex-direction: row;
+            padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 100px;
+            align-items: center;
+
+            .sobrenosp {
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                padding-top: 100px;
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-bottom: 100px;
+                justify-content: center;
+            }
+
+        }
+    }
+
+    .ubicacion {
+        background-image: linear-gradient(to right, chocolate, beige);
+        grid-area: ubicacion;
+
+        .ubicacionP {
+            background-image: linear-gradient(to right, chocolate, beige);
+            font-size: 25px;
+            padding-left: 20px;
+            grid-area: ubicacionP;
+
+            @media screen and (max-width: 480px) {
+                padding-left: 0%;
+                font-size: 20px;
+
+            }
+        }
+
+        .ubicacionConteiner {
+            display: flex;
+
+            .envios {
+                padding-left: 60px;
+
+                ol li {
+                    display: block;
+                    padding-left: 150px
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            justify-content: center;
+
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        display: grid;
+        grid-template-areas:
+            "header "
+            "sobrenos "
+            "ubicacionP "
+            "ubicacion "
+            "footer ";
+        grid-template-rows: auto 1fr 1/2fr 2fr auto;
+    }
+
+}

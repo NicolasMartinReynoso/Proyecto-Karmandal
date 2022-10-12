@@ -1,0 +1,51 @@
+#grilla2 {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "barra catalogo"
+        "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 90%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
+
+    .catalogo {
+        grid-area: catalogo;
+
+
+        .catalogoFlex {
+            display: flex;
+            justify-content: center;
+            padding-left: 20%;
+            overflow: hidden;
+
+            .columna {
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: 480px) {
+                    display: flex;
+                    padding-left: 10%;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                padding: 0;
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "catalogo catalogo"
+            "footer footer";
+        grid-template-rows: auto auto auto;
+
+        background: rgb(2, 0, 36);
+        background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
+    }
+}

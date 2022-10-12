@@ -1,0 +1,99 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "barra aside"
+        "barra section"
+        "footer footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 10% 90%;
+    background: linear-gradient(94deg, rgba(0, 0, 0, 1) 0%, rgba(237, 0, 255, 1) 54%, rgba(19, 0, 18, 1) 100%);
+
+    aside {
+        padding: 60px;
+        grid-area: aside;
+
+        @media screen and (max-width: 480px) {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+
+    .inicioCatalogo {
+        grid-area: section;
+
+        .botonDiv {
+            height: min-content;
+            display: flex;
+            justify-content: center;
+
+            .botonCatalogo {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 200%;
+                background-color: rgb(5, 0, 5);
+                border-radius: 50%;
+                display: inline;
+
+                &:hover {
+                    background-color: rgb(228, 18, 158);
+                    box-shadow: 5px 5px 5px goldenrod;
+                }
+
+
+                #enlace {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+        }
+
+
+        .inicioCatalogoDiv {
+            display: flex;
+
+            .mobileImg {
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: 480px) {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+
+            .imgInicio:hover {
+                box-shadow: 5px 5px 5px goldenrod;
+            }
+
+            .imgInicio {
+                @media screen and (max-width: 480px) {
+                    margin: 0;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        display: grid;
+        grid-template-areas:
+            "header "
+            "aside"
+            "section"
+            "footer ";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+
+    }
+    
+}

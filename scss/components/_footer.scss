@@ -1,0 +1,23 @@
+footer {
+    background-image: linear-gradient(to right, black, rgba(26, 24, 24, 0.507));
+    display: flex;
+    padding-right: 10%;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: right;
+    grid-area: footer;
+    color: white;
+    padding-top: 5%;
+    margin-top: 5%;
+
+    @media screen and (max-width: 480px) {
+        display: flex;
+        font-size: 100%;
+        justify-content: center;
+        padding-right: 0%;
+
+    }
+
+}

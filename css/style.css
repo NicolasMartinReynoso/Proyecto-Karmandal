@@ -1,489 +1,372 @@
- * {
-     margin: 0;
-     padding: 0;
- }
-
- /*----------------- Header ---------------*/
-
- a {
-     text-decoration: none;
-     color: black;
- }
-
- header {
-     grid-area: header;
- }
-
- /*-------------------footer-------------------*/
-
- footer {
-     background-image: linear-gradient(to right, black, rgba(26, 24, 24, 0.507));
-     display: flex;
-     padding-right: 10%;
-     height: auto;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-weight: bolder;
-     font-size: 20px;
-     justify-content: right;
-     grid-area: footer;
-     color: white;
- }
-
- /*-------------------inicio-------------------*/
-
-
- #grilla {
-     display: grid;
-     grid-template-areas:
-         "header header"
-         "barra aside"
-         "barra section"
-         "footer footer";
-     grid-template-rows: auto auto auto auto;
-     grid-template-columns: 10% 90%;
-     background: linear-gradient(94deg, rgba(0, 0, 0, 1) 0%, rgba(237, 0, 255, 1) 54%, rgba(19, 0, 18, 1) 100%);
- }
-
-
- .barra {
-     grid-area: barra;
-     background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0.507), black);
- }
-
- aside {
-     padding: 60px;
-     grid-area: aside;
-
- }
-
- #enlace {
-     text-decoration: none;
-     color: white;
- }
-
- .botonCatalogo {
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-size: 200%;
-     background-color: rgb(5, 0, 5);
-     border-radius: 50%;
-     display: inline;
-
- }
-
- .botonCatalogo:hover {
-     background-color: rgb(228, 18, 158);
-     box-shadow: 5px 5px 5px goldenrod;
- }
-
- .botonDiv {
-     height: min-content;
-     display: flex;
-     justify-content: center;
- }
-
- .inicioCatalogo {
-     grid-area: section;
-
- }
-
-
- .mobileImg {
-     display: flex;
-     flex-direction: column;
- }
-
- .productoImg {
-     margin-top: 50px;
-     border-radius: 50%;
-     display: flex;
-     flex-direction: column;
- }
-
- .inicioCatalogoDiv {
-     display: flex;
-
- }
-
- .imgInicio:hover {
-     box-shadow: 5px 5px 5px goldenrod;
- }
-
- /*-------------------catalogo------------*/
-
- h3 {
-     text-align: center;
-     font-size: 300%;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     color: white;
-     padding: 2%;
-     width: 80%;
-     background-color: rgba(0, 0, 0, 0.425);
-     margin-top: 10%;
-     margin-right: 20%;
-     margin-bottom: 5%;
-     margin-left: 10%;
-     box-shadow: 10px 10px 5px black;
- }
-
- #grilla2 {
-     display: grid;
-     grid-template-areas:
-         "header header"
-         "barra catalogo"
-         "footer footer";
-     grid-template-rows: auto auto auto;
-     grid-template-columns: 10% 90%;
-
-     background: rgb(2, 0, 36);
-     background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
- }
-
- .catalogo {
-     grid-area: catalogo;
-
- }
-
- .catalogoFlex {
-     display: flex;
-     justify-content: center;
-     padding-left: 20%;
-     overflow: hidden;
- }
-
- .columna {
-     display: flex;
-     flex-direction: column;
-
- }
-
-
-
- /*-------------------pedidos--------------*/
-
-
- #grilla3 {
-     display: grid;
-     grid-template-areas:
-         "header header"
-         "barra pedidos"
-
-         "footer footer";
-     grid-template-rows: auto 2fr auto;
-     grid-template-columns: 1fr 6fr;
- }
-
- .pedidos {
-     background: rgb(2, 0, 36);
-     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 116, 1) 38%, rgba(0, 212, 255, 1) 100%);
-     height: auto;
-     grid-area: pedidos;
-     display: flex;
-     flex-direction: column;
-     padding-right: 15%;
- }
-
- .pedidosDiv {
-     width: auto;
-     padding-top: 5%;
-     text-align: justify;
-
- }
-
- .pedidosTextos {
-     text-align: center;
-     font-size: 20px;
-     padding-top: 60px;
-     margin-left: 18%;
-     color: rgb(255, 255, 255)
- }
-
- .formulario {
-     background-color: #000000;
-     width: auto;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     margin-left: 25%;
-     margin-right: 15%;
- }
-
- form {
-     text-align: center;
- }
-
- /*---------------novedades-----------------*/
-
- #grilla5 {
-     display: grid;
-     grid-template-areas:
-         "header header"
-         "barra novedades"
-         "barra ofertas"
-         "footer footer";
-     grid-template-rows: auto auto auto auto;
-     grid-template-columns: 10% 90%;
- }
-
- .loNuevo {
-     background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
-     padding-bottom: 0;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     grid-area: novedades;
-     padding-bottom: 10%;
- }
-
- .novedades {
-     justify-content: center;
- }
-
- .ofertas {
-     grid-area: ofertas;
-     background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
- }
-
- .ofertasImg {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
-
-
-
- /*-------------------nosotros-----------------*/
-
- #grilla4 {
-     display: grid;
-     grid-template-areas:
-         "header header "
-         "barra sobrenos "
-         "barra ubicacionP "
-         "barra ubicacion "
-         "footer footer ";
-     grid-template-rows: auto 1fr 1/2fr 2fr auto;
-     grid-template-columns: 1fr 6fr;
-
- }
-
- .sobrenos {
-     background-image: linear-gradient(to right, chocolate, beige);
-     width: auto;
-     height: auto;
-     grid-area: sobrenos;
- }
-
- .sobrenosDiv {
-     display: flex;
-     flex-direction: row;
-     padding-top: 100px;
-     padding-left: 100px;
-     padding-right: 100px;
-     margin-bottom: 100px;
-     align-items: center;
- }
-
- .sobrenosp {
-     font-size: 20px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     text-align: center;
-
-     padding-left: 60px;
-     padding-right: 60px;
- }
-
-
- .ubicacionP {
-     background-image: linear-gradient(to right, chocolate, beige);
-     font-size: 25px;
-     padding-left: 20px;
-     grid-area: ubicacionP;
- }
-
- .ubicacionConteiner {
-     display: flex;
- }
-
- .ubicacion {
-     background-image: linear-gradient(to right, chocolate, beige);
-     grid-area: ubicacion;
-
- }
-
- .envios {
-     padding-left: 60px;
- }
-
- ol li {
-     display: block;
-     padding-left: 150px
- }
-
-
- /*RESPONSIVE*/
-
- @media screen and (max-width: 480px) {
-
-
-     /*---------------INICIO-------------*/
-
-     #grilla {
-         display: grid;
-         grid-template-areas:
-             "header "
-             "aside"
-             "section"
-             "footer ";
-         grid-template-rows: auto auto auto auto;
-         grid-template-columns: 100%;
-     }
-
-     .barra {
-         display: none
-     }
-
-     aside {
-         width: 100%;
-         margin-top: 10%;
-     }
-
-     .mobileImg {
-         width: 50%;
-         height: auto;
-
-     }
-
-     .inicioCatalogoDiv {
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-
-     }
-
-
-     .imgInicio {
-         margin: 0;
-     }
-
-     /*----------FOOTER----------*/
-
-     footer {
-      
-         display: flex;         
-         font-size: 100%;
-         justify-content: center;
-         padding-right: 0%;
-        
-     }
-
-     /*-------------Catalogo----------*/
-
-     h3 {
-         text-align: center;
-         font-size: 150%;
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         color: white;
-         padding: 2%;
-         width: 90%;
-         background-color: rgba(0, 0, 0, 0.425);
-         margin-top: 15%;
-         margin-right: 10%;
-         margin-bottom: 5%;
-         margin-left: 0%;
-         box-shadow: 10px 10px 5px black;
-     }
-
-     #grilla2 {
-         display: grid;
-         grid-template-areas:
-             "header header"
-             "catalogo catalogo"
-             "footer footer";
-         grid-template-rows: auto auto auto;
-
-         background: rgb(2, 0, 36);
-         background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(226, 27, 27, 1) 42%, rgba(0, 54, 255, 1) 100%);
-     }
-
-     .catalogoFlex {
-         display: flex;
-
-         padding: 0;
-         flex-direction: column;
-
-
-     }
-
-     .columna {
-         display: flex;
-         padding-left: 10%;
-     }
-
-     /*------------Nosotros--------*/
-     #grilla4 {
-         display: grid;
-         grid-template-areas:
-             "header "
-             "sobrenos "
-             "ubicacionP "
-             "ubicacion "
-             "footer ";
-         grid-template-rows: auto 1fr 1/2fr 2fr auto;
-     }
-
-     .sobrenosDiv {
-         display: flex;
-         flex-direction: column;
-         padding-top: 100px;
-         padding-left: 50px;
-         padding-right: 50px;
-         margin-bottom: 100px;
-         justify-content: center;
-     }
-
-     .ubicacionP {
-
-         padding-left: 0%;
-         font-size: 20px;
-
-     }
-
-     .ubicacion {
-         justify-content: center;
-
-     }
-
-     .ubicacionConteiner {
-         display: flex;
-         flex-direction: column;
-     }
-
-     /*-------------Pedidos---------*/
-     #grilla3 {
-         display: grid;
-         grid-template-areas:
-             "header"
-             "pedidos"
-             "footer";
-         grid-template-rows: auto auto auto;
-         grid-template-columns: auto;
-     }
-
-     /*-----------Novedades-----------*/
-
-
-     #grilla5 {
-         display: grid;
-         grid-template-areas:
-             " header"
-             "novedades"
-             "ofertas"
-             " footer";
-         grid-template-rows: auto auto auto auto;
-         grid-template-columns: 100%;
-
-     }
-
-
-
-
- }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.barra {
+  grid-area: barra;
+  background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0.507), black);
+}
+
+.productoImg {
+  margin-top: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  font-size: 300%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding: 2%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.425);
+  margin-top: 10%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  box-shadow: 10px 10px 5px black;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    text-align: center;
+    font-size: 150%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    padding: 2%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-top: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    box-shadow: 10px 10px 5px black;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .barra {
+    display: none;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  background-image: linear-gradient(to right, black, rgba(26, 24, 24, 0.507));
+  display: flex;
+  padding-right: 10%;
+  height: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  justify-content: right;
+  grid-area: footer;
+  color: white;
+  padding-top: 5%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    font-size: 100%;
+    justify-content: center;
+    padding-right: 0%;
+  }
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "header header" "barra aside" "barra section" "footer footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 10% 90%;
+  background: linear-gradient(94deg, rgb(0, 0, 0) 0%, rgb(237, 0, 255) 54%, rgb(19, 0, 18) 100%);
+}
+#grilla aside {
+  padding: 60px;
+  grid-area: aside;
+}
+@media screen and (max-width: 480px) {
+  #grilla aside {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+#grilla .inicioCatalogo {
+  grid-area: section;
+}
+#grilla .inicioCatalogo .botonDiv {
+  height: min-content;
+  display: flex;
+  justify-content: center;
+}
+#grilla .inicioCatalogo .botonDiv .botonCatalogo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 200%;
+  background-color: rgb(5, 0, 5);
+  border-radius: 50%;
+  display: inline;
+}
+#grilla .inicioCatalogo .botonDiv .botonCatalogo:hover {
+  background-color: rgb(228, 18, 158);
+  box-shadow: 5px 5px 5px goldenrod;
+}
+#grilla .inicioCatalogo .botonDiv .botonCatalogo #enlace {
+  text-decoration: none;
+  color: white;
+}
+#grilla .inicioCatalogo .inicioCatalogoDiv {
+  display: flex;
+}
+#grilla .inicioCatalogo .inicioCatalogoDiv .mobileImg {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  #grilla .inicioCatalogo .inicioCatalogoDiv .mobileImg {
+    width: 50%;
+    height: auto;
+  }
+}
+#grilla .inicioCatalogo .inicioCatalogoDiv .imgInicio:hover {
+  box-shadow: 5px 5px 5px goldenrod;
+}
+@media screen and (max-width: 480px) {
+  #grilla .inicioCatalogo .inicioCatalogoDiv .imgInicio {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla .inicioCatalogo .inicioCatalogoDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "header " "aside" "section" "footer ";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+  }
+}
+
+#grilla5 {
+  display: grid;
+  grid-template-areas: "header header" "barra novedades" "barra ofertas" "footer footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 10% 90%;
+}
+#grilla5 .loNuevo {
+  background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+  padding-bottom: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  grid-area: novedades;
+  padding-bottom: 10%;
+}
+#grilla5 .ofertas {
+  grid-area: ofertas;
+  background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+}
+#grilla5 .ofertas .ofertasImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  #grilla5 {
+    display: grid;
+    grid-template-areas: " header" "novedades" "ofertas" " footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+  }
+}
+
+#grilla4 {
+  display: grid;
+  grid-template-areas: "header header " "barra sobrenos " "barra ubicacionP " "barra ubicacion " "footer footer ";
+  grid-template-rows: auto 1fr 1/2fr 2fr auto;
+  grid-template-columns: 1fr 6fr;
+}
+#grilla4 .sobrenos {
+  background-image: linear-gradient(to right, chocolate, beige);
+  width: auto;
+  height: auto;
+  grid-area: sobrenos;
+}
+#grilla4 .sobrenos .sobrenosDiv {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+#grilla4 .sobrenos .sobrenosDiv .sobrenosp {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .sobrenos .sobrenosDiv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
+#grilla4 .ubicacion {
+  background-image: linear-gradient(to right, chocolate, beige);
+  grid-area: ubicacion;
+}
+#grilla4 .ubicacion .ubicacionP {
+  background-image: linear-gradient(to right, chocolate, beige);
+  font-size: 25px;
+  padding-left: 20px;
+  grid-area: ubicacionP;
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .ubicacion .ubicacionP {
+    padding-left: 0%;
+    font-size: 20px;
+  }
+}
+#grilla4 .ubicacion .ubicacionConteiner {
+  display: flex;
+}
+#grilla4 .ubicacion .ubicacionConteiner .envios {
+  padding-left: 60px;
+}
+#grilla4 .ubicacion .ubicacionConteiner .envios ol li {
+  display: block;
+  padding-left: 150px;
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .ubicacion .ubicacionConteiner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .ubicacion {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla4 {
+    display: grid;
+    grid-template-areas: "header " "sobrenos " "ubicacionP " "ubicacion " "footer ";
+    grid-template-rows: auto 1fr 1/2fr 2fr auto;
+  }
+}
+
+#grilla3 {
+  display: grid;
+  grid-template-areas: "header header" "barra pedidos" "footer footer";
+  grid-template-rows: auto 2fr auto;
+  grid-template-columns: 1fr 6fr;
+}
+#grilla3 .pedidos {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 116) 38%, rgb(0, 212, 255) 100%);
+  height: auto;
+  grid-area: pedidos;
+  display: flex;
+  flex-direction: column;
+  padding-right: 15%;
+}
+#grilla3 .pedidos .pedidosDiv {
+  width: auto;
+  padding-top: 5%;
+  text-align: justify;
+}
+#grilla3 .pedidos .pedidosDiv .pedidosTextos {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 60px;
+  margin-left: 18%;
+  color: rgb(255, 255, 255);
+}
+#grilla3 .pedidos form {
+  text-align: center;
+}
+#grilla3 .pedidos form .formulario {
+  background-color: #000000;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 15%;
+}
+@media screen and (max-width: 480px) {
+  #grilla3 {
+    display: grid;
+    grid-template-areas: "header" "pedidos" "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+  }
+}
+
+#grilla2 {
+  display: grid;
+  grid-template-areas: "header header" "barra catalogo" "footer footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 10% 90%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(to bottom, rgb(2, 0, 36) 0%, rgb(226, 27, 27) 42%, rgb(0, 54, 255) 100%);
+}
+#grilla2 .catalogo {
+  grid-area: catalogo;
+}
+#grilla2 .catalogo .catalogoFlex {
+  display: flex;
+  justify-content: center;
+  padding-left: 20%;
+  overflow: hidden;
+}
+#grilla2 .catalogo .catalogoFlex .columna {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  #grilla2 .catalogo .catalogoFlex .columna {
+    display: flex;
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla2 .catalogo .catalogoFlex {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla2 {
+    display: grid;
+    grid-template-areas: "header header" "catalogo catalogo" "footer footer";
+    grid-template-rows: auto auto auto;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to bottom, rgb(2, 0, 36) 0%, rgb(226, 27, 27) 42%, rgb(0, 54, 255) 100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

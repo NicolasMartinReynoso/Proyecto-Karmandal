@@ -1,0 +1,42 @@
+#grilla5 {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "barra novedades"
+        "barra ofertas"
+        "footer footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 10% 90%;
+
+    .loNuevo {
+        background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+        padding-bottom: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        grid-area: novedades;
+        padding-bottom: 10%;
+    }
+
+    .ofertas {
+        grid-area: ofertas;
+        background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+
+        .ofertasImg {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "novedades"
+            "ofertas"
+            " footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+
+    }
+
+}
