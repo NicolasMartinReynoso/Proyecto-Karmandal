@@ -1,3 +1,7 @@
+@import '../base/listas';
+@import '../base/variables';
+
+
 #grilla5 {
     display: grid;
     grid-template-areas:
@@ -9,16 +13,16 @@
     grid-template-columns: 10% 90%;
 
     .loNuevo {
-        background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+        background: radial-gradient(circle, nth($colores-fondo,3), nth($colores-fondo,4));
         padding-bottom: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $font-family;
         grid-area: novedades;
         padding-bottom: 10%;
     }
 
     .ofertas {
         grid-area: ofertas;
-        background: radial-gradient(circle, rgb(11, 181, 187), rgba(38, 85, 7, 0.973));
+        background: radial-gradient(circle, nth($colores-fondo,3), nth($colores-fondo,4));
 
         .ofertasImg {
             display: flex;

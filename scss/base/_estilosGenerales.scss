@@ -1,3 +1,6 @@
+
+@import '../base/listas';
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +14,11 @@ a {
 
 .barra {
     grid-area: barra;
-    background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0.507), black);
+    background-image: linear-gradient(to bottom, nth($colores-footer-barra,3), nth($colores-footer-barra,1));
+    
+    @media screen and (max-width: 480px) {
+        display: none
+    }
 }
 
 .productoImg {
@@ -52,8 +59,3 @@ h3 {
 
 }
 
-.barra {
-    @media screen and (max-width: 480px) {
-        display: none
-    }
-}

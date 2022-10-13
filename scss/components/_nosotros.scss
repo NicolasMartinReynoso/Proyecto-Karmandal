@@ -1,3 +1,7 @@
+@import '../base/listas';
+@import '../base/variables';
+
+
 #grilla4 {
     display: grid;
     grid-template-areas:
@@ -7,10 +11,10 @@
         "barra ubicacion "
         "footer footer ";
     grid-template-rows: auto 1fr 1/2fr 2fr auto;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr auto;
 
     .sobrenos {
-        background-image: linear-gradient(to right, chocolate, beige);
+        background-image: linear-gradient(to right, nth($colores-fondo, 2), nth($colores-fondo, 1));
         width: auto;
         height: auto;
         grid-area: sobrenos;
@@ -26,10 +30,12 @@
 
             .sobrenosp {
                 font-size: 20px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-family: $font-family;
                 text-align: center;
                 padding-left: 60px;
                 padding-right: 60px;
+
+
             }
 
             @media screen and (max-width: 480px) {
@@ -46,24 +52,44 @@
     }
 
     .ubicacion {
-        background-image: linear-gradient(to right, chocolate, beige);
+        background-image: linear-gradient(to right, nth($colores-fondo, 2), nth($colores-fondo, 1));
         grid-area: ubicacion;
+        width: auto;
 
         .ubicacionP {
-            background-image: linear-gradient(to right, chocolate, beige);
+            background-image: linear-gradient(to right, nth($colores-fondo, 2), nth($colores-fondo, 1));
             font-size: 25px;
             padding-left: 20px;
             grid-area: ubicacionP;
+            width: 100%;
+            font-family: $font-family;
 
             @media screen and (max-width: 480px) {
-                padding-left: 0%;
-                font-size: 20px;
+                font-size: auto;
+                text-align: start;
 
             }
         }
 
         .ubicacionConteiner {
             display: flex;
+
+            p {
+                font-family: $font-family;
+
+                @media screen and (max-width: 480px) {
+                    font-size: auto;
+                    text-align: center;
+                }
+            }
+
+            div {
+                iframe {
+                    @media screen and (max-width:480px) {
+                        height: auto;
+                    }
+                }
+            }
 
             .envios {
                 padding-left: 60px;
@@ -95,7 +121,7 @@
             "ubicacionP "
             "ubicacion "
             "footer ";
-        grid-template-rows: auto 1fr 1/2fr 2fr auto;
+
     }
 
 }

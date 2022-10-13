@@ -12,6 +12,11 @@ a {
   grid-area: barra;
   background-image: linear-gradient(to bottom, rgba(26, 24, 24, 0.507), black);
 }
+@media screen and (max-width: 480px) {
+  .barra {
+    display: none;
+  }
+}
 
 .productoImg {
   margin-top: 50px;
@@ -51,12 +56,6 @@ h3 {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .barra {
-    display: none;
-  }
-}
-
 header {
   grid-area: header;
 }
@@ -73,7 +72,6 @@ footer {
   grid-area: footer;
   color: white;
   padding-top: 5%;
-  margin-top: 5%;
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -196,7 +194,7 @@ footer {
   display: grid;
   grid-template-areas: "header header " "barra sobrenos " "barra ubicacionP " "barra ubicacion " "footer footer ";
   grid-template-rows: auto 1fr 1/2fr 2fr auto;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr auto;
 }
 #grilla4 .sobrenos {
   background-image: linear-gradient(to right, chocolate, beige);
@@ -234,21 +232,38 @@ footer {
 #grilla4 .ubicacion {
   background-image: linear-gradient(to right, chocolate, beige);
   grid-area: ubicacion;
+  width: auto;
 }
 #grilla4 .ubicacion .ubicacionP {
   background-image: linear-gradient(to right, chocolate, beige);
   font-size: 25px;
   padding-left: 20px;
   grid-area: ubicacionP;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media screen and (max-width: 480px) {
   #grilla4 .ubicacion .ubicacionP {
-    padding-left: 0%;
-    font-size: 20px;
+    font-size: auto;
+    text-align: start;
   }
 }
 #grilla4 .ubicacion .ubicacionConteiner {
   display: flex;
+}
+#grilla4 .ubicacion .ubicacionConteiner p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .ubicacion .ubicacionConteiner p {
+    font-size: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #grilla4 .ubicacion .ubicacionConteiner div iframe {
+    height: auto;
+  }
 }
 #grilla4 .ubicacion .ubicacionConteiner .envios {
   padding-left: 60px;
@@ -272,7 +287,6 @@ footer {
   #grilla4 {
     display: grid;
     grid-template-areas: "header " "sobrenos " "ubicacionP " "ubicacion " "footer ";
-    grid-template-rows: auto 1fr 1/2fr 2fr auto;
   }
 }
 

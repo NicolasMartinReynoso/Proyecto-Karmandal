@@ -1,3 +1,6 @@
+@import '../base/variables';
+
+
 #grilla {
     display: grid;
     grid-template-areas:
@@ -28,7 +31,7 @@
             justify-content: center;
 
             .botonCatalogo {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-family: $font-family;
                 font-size: 200%;
                 background-color: rgb(5, 0, 5);
                 border-radius: 50%;
