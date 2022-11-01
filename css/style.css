@@ -257,12 +257,13 @@ footer {
 @media screen and (max-width: 480px) {
   #grilla4 .ubicacion .ubicacionConteiner p {
     font-size: auto;
-    text-align: center;
+    text-align: left;
   }
 }
 @media screen and (max-width: 480px) {
   #grilla4 .ubicacion .ubicacionConteiner div iframe {
-    height: auto;
+    height: 100%;
+    width: 100%;
   }
 }
 #grilla4 .ubicacion .ubicacionConteiner .envios {
@@ -312,30 +313,68 @@ footer {
 }
 #grilla3 .pedidos .pedidosDiv .pedidosTextos {
   text-align: center;
-  font-size: 20px;
-  padding-top: 60px;
+  font-size: 115%;
+  padding-top: 5%;
   margin-left: 18%;
   color: rgb(255, 255, 255);
 }
-#grilla3 .pedidos form {
-  text-align: center;
-}
-#grilla3 .pedidos form .formulario {
-  background-color: #000000;
+#grilla3 .pedidos .formularioPedidos {
   width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   margin-left: 25%;
   margin-right: 15%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista {
+  background-color: #000000;
+  color: white;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista input {
+  margin-top: 2%;
+}
+@media screen and (max-width: 480px) {
+  #grilla3 .pedidos .formularioPedidos .formularioLista input {
+    width: 70%;
+  }
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista .emailFormulario {
+  margin-top: 2%;
+  width: 85%;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista fieldset {
+  margin-top: 5%;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista fieldset legend {
+  text-align: left;
+  font-size: 100%;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista fieldset select {
+  width: 84%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+#grilla3 .pedidos .formularioPedidos .formularioLista textarea {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #grilla3 .pedidos .formularioPedidos {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 5%;
+    padding-right: 0%;
+  }
 }
 @media screen and (max-width: 480px) {
   #grilla3 {
     display: grid;
     grid-template-areas: "header" "pedidos" "footer";
     grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
   }
 }
 

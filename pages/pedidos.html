@@ -71,19 +71,35 @@
     </div>
 
 
-    <div>
-      <form action="">
-        <p class="formulario">
-          Nombre: <input type="text" name="Nombre" /> <br />
-          Apellido: <input type="text" name="apellido" /> <br />
-          Contacto: <input type="text" name="contacto" /> <br />
-          Direccion: <input type="text" name="Direccion" /> <br />
-          Detalle del pedido:
-          <textarea name="detalle" cols="30" rows="10"></textarea> <br />
-          <input type="submit" value="Enviar" />
-        </p>
-      </form>
-    </div>
+    <form action="/server/" method="post" enctype="application/x-www-form-urlencoded" class="formularioPedidos">
+      <div class="formularioLista">
+        <label for="nombre" id="nombre" name="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre"><br>
+        <label for="apellido" id="apellido" name="apellido">Apellido:</label>
+        <input type="text" name="apellido" placeholder="Apellido"><br>
+        <label for="contacto" id="contacto" name="contacto">Contacto:</label>
+        <input type="email" name="contacto" placeholder="Email" class="emailFormulario">
+        <fieldset>
+          <legend>Direccion</legend><br>
+          <label for="calle" id="calle" name="calle">Calle:</label>
+          <input type="number" name="calle" placeholder="Calle">
+          <label for="numeroCasa" id="numeroCasa" name="numeroCasa">Numero:</label>
+          <input type="number" name="numeroCasa" placeholder="Numero">
+          <label for="localidad" id="localidad" name="localidad">Localidad:</label>
+          <select name="Localidad" id="localidad">
+            <option value="laPlata">La Plata</option>
+            <option value="lOlmos">L.Olmos</option>
+            <option value="losHornos">Los Hornos</option>
+            <option value="abasto">Abasto</option>
+            <option value="romero">Romero</option>
+            <option value="etcheverry">Etcheverry</option>
+          </select>
+        </fieldset>
+        <label for="detalle">Detalles del pedido:</label>
+        <textarea name="Detalle" id="" cols="20" rows="8" placeholder="descripcion"></textarea>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
 
   </section>
 

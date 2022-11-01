@@ -79,14 +79,15 @@
 
                 @media screen and (max-width: 480px) {
                     font-size: auto;
-                    text-align: center;
+                    text-align: left;
                 }
             }
 
             div {
                 iframe {
                     @media screen and (max-width:480px) {
-                        height: auto;
+                        height: 100%;
+                        width: 100%;
                     }
                 }
             }
