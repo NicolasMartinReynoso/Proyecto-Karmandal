@@ -28,11 +28,16 @@
                 font-size: 115%;
                 padding-top: 5%;
                 margin-left: 18%;
-                color: rgb(255, 255, 255)
+                color: rgb(255, 255, 255);
+
+
+
+            }
+
+            @media screen and (max-width: 480px) {
+                margin-top: 4rem;
             }
         }
-
-
 
         .formularioPedidos {
 

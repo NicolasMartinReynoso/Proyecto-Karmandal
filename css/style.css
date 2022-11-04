@@ -96,7 +96,8 @@ footer {
 @media screen and (max-width: 480px) {
   #grilla aside {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5rem;
+    padding: 0;
   }
 }
 #grilla .inicioCatalogo {
@@ -317,6 +318,11 @@ footer {
   padding-top: 5%;
   margin-left: 18%;
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 480px) {
+  #grilla3 .pedidos .pedidosDiv {
+    margin-top: 4rem;
+  }
 }
 #grilla3 .pedidos .formularioPedidos {
   width: auto;
