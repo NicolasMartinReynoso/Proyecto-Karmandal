@@ -11,30 +11,22 @@
 
     .catalogo {
         grid-area: catalogo;
+        column-count: 3;
+        column-fill: balance all;
+        position: relative;
 
-
-        .catalogoFlex {
+        @media screen and (max-width: 480px) {
             display: flex;
-            justify-content: center;
-            padding-left: 20%;
-            overflow: hidden;
-
-            .columna {
-                display: flex;
-                flex-direction: column;
-
-                @media screen and (max-width: 480px) {
-                    display: flex;
-                    padding-left: 10%;
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-                display: flex;
-                padding: 0;
-                flex-direction: column;
-            }
+            padding-left: 10%;
         }
+
+
+        @media screen and (max-width: 480px) {
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+        }
+
     }
 
     @media screen and (max-width: 480px) {
