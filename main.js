@@ -1,7 +1,7 @@
 fetch("/productos.json")
   .then(response => response.json())
   .then(productos => {
-  
+
     let carrito = []
     let contenedorPadre = document.getElementById("catalogo")
     let contenedorMenuCatalogo = document.getElementById("contenedorMenuCatalogo")
@@ -29,6 +29,7 @@ fetch("/productos.json")
               let unidadDeCarrito = document.createElement("div")
               unidadDeCarrito.innerHTML = `Producto: ${elemento.nombre}, Precio: $${elemento.precio}`
               elementosCarrito.append(unidadDeCarrito)
+              unidadDeCarrito.className = "unidadDeCarrito"
             }
           }
         })
@@ -51,12 +52,13 @@ fetch("/productos.json")
     let filtroSahumerios = document.getElementById("filtroSahumerios")
     let filtroMacetas = document.getElementById("filtroMacetas")
     let filtroLapices = document.getElementById("filtroLapices")
+    let filtroTodos = document.getElementById("filtroTodos")
     filtroMandalas.addEventListener("change", filtrarCategoria)
     filtrofunkos.addEventListener("change", filtrarCategoria)
     filtroSahumerios.addEventListener("change", filtrarCategoria)
     filtroMacetas.addEventListener("change", filtrarCategoria)
     filtroLapices.addEventListener("change", filtrarCategoria)
-
+    filtroTodos.addEventListener("change", filtrarCategoria)
 
     function filtrarCategoria() {
       limpiarPantalla()
@@ -80,7 +82,10 @@ fetch("/productos.json")
         let productosFiltrados = productos.filter((e) => e.categoria === "portaLapices")
         Renderizar(productosFiltrados)
       }
-
+      if (filtroTodos.checked) {
+        limpiarPantalla()
+        Renderizar(productos)
+      }
 
     }
     function filtrarPrecio() {

@@ -430,6 +430,7 @@ footer {
 
 #botonCarrito{
   background-color: brown;
+  width: 90%;
 }
 .swal-overlay {
   background-color: rgba(82, 78, 67, 0.822);
@@ -445,5 +446,17 @@ footer {
   background-color: #693411;
   border: 1px solid #9a3e3e;
 }
+
+#elementosCarrito{
+  background-color: aliceblue; 
+   
+}
+
+.unidadDeCarrito{
+border-color: black;
+   border-style: solid;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
