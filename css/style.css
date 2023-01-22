@@ -431,5 +431,19 @@ footer {
 #botonCarrito{
   background-color: brown;
 }
+.swal-overlay {
+  background-color: rgba(82, 78, 67, 0.822);
+}
+.swal-modal {
+  background: radial-gradient(rgb(240, 212, 160),rgb(121, 63, 16)) ;
+  border: 3px solid rgb(17, 16, 16);
+  border-radius: 20%;
+}
+
+.swal-button {
+  border-radius: 2px;
+  background-color: #693411;
+  border: 1px solid #9a3e3e;
+}
 
 /*# sourceMappingURL=style.css.map */
