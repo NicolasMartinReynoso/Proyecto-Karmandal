@@ -408,6 +408,7 @@ footer {
     padding: 0;
     flex-direction: column;
   }
+
 }
 @media screen and (max-width: 480px) {
   #grilla2 {
@@ -417,6 +418,18 @@ footer {
     background: rgb(2, 0, 36);
     background: linear-gradient(to bottom, rgb(2, 0, 36) 0%, rgb(226, 27, 27) 42%, rgb(0, 54, 255) 100%);
   }
+}
+.estiloFiltros{
+  color:orangered;
+  
+}
+
+.estiloFiltros ul{
+  list-style: none;
+}
+
+#botonCarrito{
+  background-color: brown;
 }
 
 /*# sourceMappingURL=style.css.map */

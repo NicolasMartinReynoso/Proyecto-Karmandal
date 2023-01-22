@@ -16,7 +16,9 @@ a {
     grid-area: barra;
     background-image: linear-gradient(to bottom, nth($colores-footer-barra,3), nth($colores-footer-barra,1));
     
-    
+    .estiloFiltros{
+        color:orangered;
+    }
 
     @media screen and (max-width: 480px) {
         display: none
